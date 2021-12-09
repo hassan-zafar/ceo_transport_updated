@@ -7,7 +7,6 @@ import 'package:ceo_transport/tools/custom_toast.dart';
 import 'package:ceo_transport/tools/show_loading.dart';
 import 'package:flutter/material.dart';
 
-
 class LoginPage extends StatefulWidget {
   final String? email;
   final String? password;
@@ -142,26 +141,27 @@ class _LoginPageState extends State<LoginPage> {
                         SizedBox(
                           height: 10,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: GestureDetector(
-                            onTap: () => Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        ForgetPasswordPage())),
-                            child: Hero(
-                              tag: "passFor",
-                              child: Text(
-                                "Forgot Password?",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
+                        // Padding(
+                        //   padding: const EdgeInsets.all(8.0),
+                        //   child: GestureDetector(
+                        //     onTap: () => Navigator.push(
+                        //         context,
+                        //         MaterialPageRoute(
+                        //             builder: (context) =>
+                        //                 ForgetPasswordPage())),
+                        //     child: Hero(
+                        //       tag: "passFor",
+                        //       child: Text(
+                        //         "Forgot Password?",
+                        //         style: TextStyle(
+                        //           fontWeight: FontWeight.bold,
+                        //           fontSize: 20,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ),
+                        // ),
+
                         GestureDetector(
                           onTap: () async {
                             if (_textFormKey.currentState!.validate()) {
